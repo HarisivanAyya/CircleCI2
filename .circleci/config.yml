@@ -8,16 +8,14 @@ jobs:
       - image: python
     steps:
       - checkout
-      - run:
-          command: python Main1.py
+      - run: python Main1.py
 
   test:
     docker:
       - image: python
     steps:
       - checkout
-      - run:
-          command: python Test.py
+      - run: python Test.py
 
 # Orchestrate our job run sequence
 workflows:
